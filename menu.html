@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - La Pizza de Lizmer</title>
+    
+    <!-- Tailwind CSS para estilos rápidos y modernos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts para una tipografía elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Script de Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Estilos personalizados y paleta de colores */
+        :root {
+            --rojo-lizmer: #E53935;
+            --fondo-claro: #FFF8F5;
+            --texto-principal: #2C1B1A;
+            --texto-secundario: #7B5E5B;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--fondo-claro);
+            color: var(--texto-principal);
+        }
+        .font-serif-display {
+            font-family: 'DM Serif Display', serif;
+        }
+        .bg-rojo-lizmer {
+            background-color: var(--rojo-lizmer);
+        }
+        .text-rojo-lizmer {
+            color: var(--rojo-lizmer);
+        }
+        .border-rojo-lizmer {
+            border-color: var(--rojo-lizmer);
+        }
+        .menu-category-title {
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.05" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23E53935"><path d="m34.824 16.324c-1.3984 0.035156-2.582 0.93359-3.0703 2.2148l-12.441 32.141-3.375-1.3125c-1.3359-0.51953-2.832 0.09375-3.3516 1.4336-0.51953 1.3359 0.09375 2.832 1.4336 3.3516l6.6875 2.625c1.0352 0.40625 2.1953 0.0625 2.9297-0.78516 0.73438-0.84766 0.94141-2.0312 0.53516-3.0664l2.625-6.75 12.441-32.141c0.41016-1.0586 0.0625-2.25-0.78516-2.9297-0.85156-0.68359-1.9961-0.85156-3.0234-0.48828z"/><path d="m71.43 33.633c-1.3047-0.51172-2.7891 0.10156-3.3008 1.4062l-12.438 32.141-3.375-1.3125c-1.3359-0.51953-2.832 0.09375-3.3516 1.4336-0.51953 1.3359 0.09375 2.832 1.4336 3.3516l6.6875 2.625c1.0352 0.40625 2.1953 0.0625 2.9297-0.78516 0.73438-0.84766 0.94141-2.0312 0.53516-3.0664l2.625-6.75 12.438-32.141c0.51172-1.3047-0.10156-2.7891-1.4062-3.3008-0.32031-0.125-0.65625-0.18359-0.98438-0.18359-0.98047 0-1.9141 0.53906-2.4219 1.4336z"/></g></svg>');
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Contenedor Principal -->
+    <div class="max-w-2xl mx-auto p-4 sm:p-6">
+
+        <!-- Cabecera con Logo -->
+        <header class="text-center my-8">
+            <img src="httpsa://i.imgur.com/tu2Z9a6.jpeg" alt="Logo La Pizza de Lizmer" class="h-24 w-24 mx-auto rounded-full shadow-lg border-4 border-white">
+            <h1 class="font-serif-display text-4xl sm:text-5xl mt-4 text-rojo-lizmer">La Pizza de Lizmer</h1>
+            <p class="text-texto-secundario mt-2 text-lg">100% Caseras, 100% Deliciosas</p>
+        </header>
+
+        <!-- Contenido del Menú -->
+        <main class="space-y-12">
+
+            <!-- Sección de Pizzas -->
+            <section id="pizzas">
+                <h2 class="font-serif-display text-3xl sm:text-4xl text-center p-4 mb-6 rounded-lg menu-category-title">Pizzas</h2>
+                <div class="space-y-6">
+                    <!-- Item de Menú -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-rojo-lizmer rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                            <i data-lucide="pizza" class="w-8 h-8"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-bold text-texto-principal">Pizza Muzzarella</h3>
+                            <p class="text-texto-secundario text-sm mt-1">Salsa de tomate casera, abundante muzzarella y aceitunas verdes.</p>
+                        </div>
+                        <p class="text-lg font-bold text-rojo-lizmer whitespace-nowrap">Gs. 45.000</p>
+                    </div>
+                    <!-- Fin de Item -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-rojo-lizmer rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                             <i data-lucide="pizza" class="w-8 h-8"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-bold text-texto-principal">Pizza Pepperoni</h3>
+                            <p class="text-texto-secundario text-sm mt-1">La clásica con rodajas de pepperoni picante y extra queso.</p>
+                        </div>
+                        <p class="text-lg font-bold text-rojo-lizmer whitespace-nowrap">Gs. 55.000</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Hamburguesas -->
+            <section id="hamburguesas">
+                <h2 class="font-serif-display text-3xl sm:text-4xl text-center p-4 mb-6 rounded-lg menu-category-title">Hamburguesas</h2>
+                <div class="space-y-6">
+                    <!-- Item de Menú -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-rojo-lizmer rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                             <i data-lucide="hamburger" class="w-8 h-8"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-bold text-texto-principal">Burger Clásica</h3>
+                            <p class="text-texto-secundario text-sm mt-1">Carne de primera, lechuga, tomate, cebolla y nuestra salsa especial.</p>
+                        </div>
+                        <p class="text-lg font-bold text-rojo-lizmer whitespace-nowrap">Gs. 25.000</p>
+                    </div>
+                    <!-- Fin de Item -->
+                </div>
+            </section>
+
+            <!-- Sección de Bebidas -->
+            <section id="bebidas">
+                <h2 class="font-serif-display text-3xl sm:text-4xl text-center p-4 mb-6 rounded-lg menu-category-title">Bebidas</h2>
+                <div class="space-y-6">
+                     <!-- Item de Menú -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-16 h-16 bg-rojo-lizmer rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                             <i data-lucide="cup-soda" class="w-8 h-8"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-bold text-texto-principal">Gaseosa 500ml</h3>
+                            <p class="text-texto-secundario text-sm mt-1">Variedad de sabores.</p>
+                        </div>
+                        <p class="text-lg font-bold text-rojo-lizmer whitespace-nowrap">Gs. 5.000</p>
+                    </div>
+                    <!-- Fin de Item -->
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pie de Página -->
+        <footer class="text-center mt-12 py-6 border-t border-red-100">
+            <p class="text-texto-secundario">La Pizza de Lizmer &copy; 2024</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Activa los íconos de Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
